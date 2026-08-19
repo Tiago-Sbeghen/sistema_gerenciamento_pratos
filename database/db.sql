@@ -9,6 +9,8 @@ CREATE TABLE usuarios IF NOT EXISTS (
 
 CREATE TABLE pratos IF NOT EXISTS (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    titulo VARCHAR(200),
-    
+    titulo VARCHAR(200) NOT NULL,
+    usuario_id INT NOT NULL,
+
+    FOREIGN KEY (usuario_id) REFERENCES usuario_id
 );
