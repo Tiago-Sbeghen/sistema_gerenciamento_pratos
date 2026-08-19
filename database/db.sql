@@ -1,0 +1,15 @@
+CREATE DATABASE gerenciamento_restaurante IF NOT EXISTS;
+USE DATABASE gerenciamento_restaurante;
+
+CREATE TABLE usuario IF NOT EXISTS (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(11) NOT NULL UNIQUE
+);
+
+CREATE TABLE pratos IF NOT EXISTS (
+    id INT AUTO_INCREMENT PRIMARY KEY
+
+
+
+);
